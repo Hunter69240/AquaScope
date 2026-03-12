@@ -4,14 +4,9 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
-
+import SearchBar from '../components/SearchBar'
 const LandingPage = () => {
-  const [search,setSearch]=useState("")
-
-  const handleClick=()=>{
-    console.log(search)
-    setSearch("")
-  }
+ 
   return (
     <Box>
       <Box
@@ -38,12 +33,14 @@ const LandingPage = () => {
             alignItems:'center'
           }}
         >
-          {/* Heading */}
+       
           <Typography
             variant="h3"
+            
             sx={{
               fontWeight: "bold",
-              lineHeight: 1.2
+              lineHeight: 1.2,
+              fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3rem" }
             }}
           >
             Your Gateway to Fish Knowledge—Type, Search, Discover
@@ -63,47 +60,7 @@ const LandingPage = () => {
           </Typography>
 
          
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center"
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                bgcolor: "background.paper",
-                borderRadius: "40px",
-                p: 0.5,
-                width: "500px",
-                boxShadow: 3
-              }}
-            >
-              <TextField
-                placeholder="Search..."
-                variant="standard"
-                fullWidth
-                value={search}
-                onChange={(e)=>setSearch(e.target.value)}
-                sx={{
-                  px: 2
-                }}
-              />
-
-              <Button
-                variant="contained"
-                onClick={handleClick}
-                sx={{
-                  borderRadius: "30px",
-                  px: 4,
-                  textTransform: "none"
-                }}
-              >
-                Search
-              </Button>
-            </Box>
-          </Box>
+          <SearchBar />
         </Stack>
       </Box>
     </Box>
