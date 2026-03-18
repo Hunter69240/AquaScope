@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import ReactDOM from "react-dom/client";
-
+import '@google/model-viewer';
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 
 import { RouterProvider, createRouter } from "@tanstack/react-router";

@@ -1,7 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import {tanstackRouter} from "@tanstack/router-plugin/vite"
-// https://vite.dev/config/
+import { tanstackRouter } from "@tanstack/router-plugin/vite"
+
 export default defineConfig({
-  plugins: [react(),tanstackRouter()],
-})
+  plugins: [
+    react({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag === 'model-viewer'
+        }
+      }
+    }),
+    tanstackRouter()
+  ],
+})  
