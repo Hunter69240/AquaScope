@@ -107,12 +107,12 @@ const FishInfo = () => {
               data.threedstatus?.exists ? (
                 
                 <model-viewer
-                  src={`https://djadb.tacbstudios.com/models/${data.threedstatus.model_name}`}
-                  poster={data.threedthumb}
-                  auto-rotate
-                  camera-controls
-                  style={{ width: '100%', height: '100%' }}
-                />
+                src="goldfish.glb"
+                poster={data.threedthumb}
+                auto-rotate
+                camera-controls
+                style={{ width: '100%', height: '100%', display: 'block' }}
+              />
               ) : (
                
                 <Box sx={{
