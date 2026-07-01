@@ -31,26 +31,26 @@ export const getFish = (fish) => {
         "images": [
             {
                 "type": "adult",
-                "actual": "https://www.fishbase.org/images/species/Alfal_u0.gif",
-                "thumbnail": "http://www.fishbase.org/images/thumbnails/gif/tn_Alfal_u0.gif",
+                "actual": "/actual/Alfal_u0.gif",
+                "thumbnail": "/thumbnail/tn_Alfal_u0.gif",
                 "author": "FAO"
             },
             {
                 "type": "adult",
-                "actual": "http://www.fishbase.org/images/species/Gafal_u0.gif",
-                "thumbnail": "http://www.fishbase.org/images/thumbnails/gif/tn_Gafal_u0.gif",
+                "actual": "/actual/Gafal_u0.gif",
+                "thumbnail": "/thumbnail/tn_Gafal_u0.gif",
                 "author": "Cada, L.A."
             },
             {
                 "type": "larvae",
-                "actual": "http://www.fishbase.org/images/species/Alfal_l0.gif",
-                "thumbnail": "http://www.fishbase.org/images/thumbnails/gif/tn_Alfal_l0.gif",
+                "actual": "/actual/Alfal_l0.gif",
+                "thumbnail": "/thumbnail/tn_Alfal_l0.gif",
                 "author": "American Society of Ichthyologists and Herpetologists"
             },
             {
                 "type": "larvae",
-                "actual": "http://www.fishbase.org/images/species/Alfal_l1.gif",
-                "thumbnail": "http://www.fishbase.org/images/thumbnails/gif/tn_Alfal_l1.gif",
+                "actual": "/actual/Alfal_l1.gif",
+                "thumbnail": "/thumbnail/tn_Alfal_l1.gif",
                 "author": "American Society of Ichthyologists and Herpetologists"
             }
         ],
