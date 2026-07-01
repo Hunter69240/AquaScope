@@ -31,7 +31,7 @@ export const getFish = (fish) => {
         "images": [
             {
                 "type": "adult",
-                "actual": "http://www.fishbase.org/images/species/Alfal_u0.gif",
+                "actual": "https://www.fishbase.org/images/species/Alfal_u0.gif",
                 "thumbnail": "http://www.fishbase.org/images/thumbnails/gif/tn_Alfal_u0.gif",
                 "author": "FAO"
             },
